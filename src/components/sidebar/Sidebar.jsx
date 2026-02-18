@@ -1,9 +1,10 @@
 import "./Sidebar.css"
+import sidebarLogo from "../../assets/sidebar-logo.png"
 
-const Sidebar = ({logo}) => {
+const Sidebar = () => {
   return (
     <div className="sidebar">
-      <img className="sidebar--logo" width={50} height={50} src={logo} alt="" />
+      <img className="sidebar--logo" width={50} height={50} src={sidebarLogo} alt="" />
     </div>
   )
 }

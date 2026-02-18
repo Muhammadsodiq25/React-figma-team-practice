@@ -6,13 +6,12 @@ import MyProfile from "./pages/myProfile/MyProfile"
 import Employees from "./pages/employees/Employees"
 import Vacations from "./pages/vacations/Vacations"
 import Sidebar from "./components/sidebar/Sidebar"
-import sidebarLogo from "./assets/sidebar-logo.png"
 
 
 const App = () => {
   return (
     <div className="container">
-      <Sidebar logo={sidebarLogo}/>
+      <Sidebar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="projects" element={<Projects/>}/>
