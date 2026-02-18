@@ -1,9 +1,9 @@
-import React from 'react'
+import "./Sidebar.css"
 
-const Sidebar = () => {
+const Sidebar = ({logo}) => {
   return (
-    <div>
-      
+    <div className="sidebar">
+      <img className="sidebar--logo" width={50} height={50} src={logo} alt="" />
     </div>
   )
 }
