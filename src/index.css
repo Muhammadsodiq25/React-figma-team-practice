@@ -13,4 +13,9 @@
   justify-content: space-between;
   display: flex;
   background-color: #f4f9fd;
+  height: 100%;
+}
+
+body {
+  background-color: #f4f9fd;
 }
