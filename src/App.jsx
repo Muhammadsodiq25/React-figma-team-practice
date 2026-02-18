@@ -5,10 +5,12 @@ import Calendar from "./pages/calendar/Calendar"
 import MyProfile from "./pages/myProfile/MyProfile"
 import Employees from "./pages/employees/Employees"
 import Vacations from "./pages/vacations/Vacations"
+import Sidebar from "./components/sidebar/Sidebar"
 
 const App = () => {
   return (
     <div className="container">
+      <Sidebar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="projects" element={<Projects/>}/>
