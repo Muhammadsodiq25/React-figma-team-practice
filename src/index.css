@@ -12,7 +12,8 @@
   padding: 10px 50px;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   display: flex;
   background-color: #f4f9fd;
   height: 100%;
