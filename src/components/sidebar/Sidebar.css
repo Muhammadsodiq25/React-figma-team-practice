@@ -15,6 +15,7 @@
   scrollbar-width: none;
   align-items: start;
   gap: 50px;
+  transition: all 0.3s ease;
 }
 
 .sidebar--logo {

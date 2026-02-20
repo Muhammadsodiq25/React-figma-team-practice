@@ -1,12 +1,13 @@
 import "./Sidebar.css"
 import {logo, link, support, logout} from "../../data/Muhammadsodiq.js"
-import { Link, useSearchParams } from "react-router-dom"
+import { Link, } from "react-router-dom"
 import { useState } from "react"
 
 const Sidebar = () => {
     const [hide,setHide] = useState(false)
   return (
-    <div className="sidebar" style={{alignItems:`${hide ? 'center' : ''}`, padding:`${hide ? '10px' : ''}`}}>
+    <div style={{width:'20%'}}>
+            <div className="sidebar" style={{alignItems:`${hide ? 'center' : ''}`, padding:`${hide ? '10px' : ''}`}}>
         <button className="sidebar--logo" onClick={()=> {setHide(!hide)}}>
             <img width={50} height={50} src={logo} alt="" />
         </button>
@@ -36,6 +37,7 @@ const Sidebar = () => {
             <img src={logout.img} alt="" />
             <span style={{display:`${hide ? 'none' : ''}`}}>{logout.text}</span>
         </button>
+    </div>
     </div>
   )
 }

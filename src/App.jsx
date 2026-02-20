@@ -12,7 +12,8 @@ const App = () => {
   return (
     <div className="container">
       <Sidebar/>
-      <Routes>
+      <div style={{width:"80%"}}>
+        <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="projects" element={<Projects/>}/>
         <Route path="calendar" element={<Calendar/>}/>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="employees" element={<Employees/>}/>
         <Route path="vacations" element={<Vacations/>}/>
       </Routes>
+      </div>
     </div>
   )
 }
