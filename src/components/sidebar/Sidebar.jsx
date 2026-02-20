@@ -1,6 +1,6 @@
 import "./Sidebar.css"
 import {logo, link, support, logout} from "../../data/Muhammadsodiq.js"
-import { Link, useSearchParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useState } from "react"
 
 const Sidebar = () => {
