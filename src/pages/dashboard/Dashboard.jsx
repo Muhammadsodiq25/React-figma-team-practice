@@ -47,18 +47,27 @@ const Dashboard = () => {
                           <p className="dashboard__projects__cart__left--id">{cart.id}</p>
                           <h3 className="dashboard__projects__cart__left--title">{cart.title1}</h3>
                         </di>
-                        <div className="dashboard__projects__cart__left__bot">
+                      </div>
+                      <div className="dashboard__projects__cart__left__bot">
                           <p className="dashboard__projects__cart--created">{cart.created}</p>
                           <p className="dashboard__projects__cart--difficulty" style={{color:`${cart.difficultyCol}`}}>{cart.difficulty}</p>
-                        </div>
                       </div>
                     </div>
-                    <div className="dashboard__projects__cart__left__bot--title">
-                      <h3>{cart.title2}</h3>
-                      <div className="dashboard__projects__cart__left__bot__bot">
-                        <div>
+                    <div style={{height:"auto", border:'1px solid #E4E6E8'}}></div>
+                    <div className="dashboard__projects__cart__right">
+                      <h3 className="dashboard__projects__cart__right--title">{cart.title2}</h3>
+                      <div className="dashboard__projects__cart__right__bot">
+                        <div className="dashboard__projects__cart__right__cart">
                           <p>All tasks</p>
                           <h3>{cart.tasks}</h3>
+                        </div>
+                        <div className="dashboard__projects__cart__right__cart">
+                          <p>Active tasks</p>
+                          <h3>{cart.activeTasks}</h3>
+                        </div>
+                        <div className="dashboard__projects__cart__right__cart">
+                          <p>Assignees</p>
+                          <img width={80} src={cart.assignees} alt="" />
                         </div>
                       </div>
                     </div>

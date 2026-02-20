@@ -143,3 +143,123 @@
   align-items: center;
   width: 100%;
 }
+
+.dashboard__projects__cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.dashboard__projects__cart {
+  display: flex;
+  /* align-items: center; */
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0px 6px 58px 0px #c4cbd61a;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dashboard__projects__cart__left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.dashboard__projects__cart__left__top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dashboard__projects__cart__left__top img {
+  width: 60px;
+  height: 60px;
+}
+
+.dashboard__projects__cart__left__top__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+
+.dashboard__projects__cart__left--id {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #91929e;
+}
+
+.dashboard__projects__cart__left--title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0a1629;
+}
+
+.dashboard__projects__cart__left__bot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard__projects__cart--created {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7d8592;
+}
+
+.dashboard__projects__cart--difficulty {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.dashboard__projects__cart__right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  gap: 30px;
+}
+
+.dashboard__projects__cart__right--title {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0a1629;
+}
+
+.dashboard__projects__cart__right__bot {
+  display: flex;
+  gap: 25px;
+  align-items: start;
+}
+
+.dashboard__projects__cart__right__cart {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.dashboard__projects__cart__right__cart p {
+  color: #91929e;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.dashboard__projects__cart__right__cart h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
