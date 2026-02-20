@@ -56,7 +56,10 @@ const Dashboard = () => {
                     <div className="dashboard__projects__cart__left__bot--title">
                       <h3>{cart.title2}</h3>
                       <div className="dashboard__projects__cart__left__bot__bot">
-                        
+                        <div>
+                          <p>All tasks</p>
+                          <h3>{cart.tasks}</h3>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -6,7 +6,7 @@ import { useState } from "react"
 const Sidebar = () => {
     const [hide,setHide] = useState(false)
   return (
-    <div style={{width:'20%'}}>
+    <div style={{width:`${hide ? '5%' : '10%'}`}}>
             <div className="sidebar" style={{alignItems:`${hide ? 'center' : ''}`, padding:`${hide ? '10px' : ''}`}}>
         <button className="sidebar--logo" onClick={()=> {setHide(!hide)}}>
             <img width={50} height={50} src={logo} alt="" />
