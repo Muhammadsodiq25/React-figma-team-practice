@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import Calendar from "./pages/calendar/Calendar";
 import MyProfile from "./pages/myProfile/MyProfile";
+import NearestEvents from "./pages/nearestEvents/NearestEvents";
 import Employees from "./pages/employees/Employees";
 import Vacations from "./pages/vacations/Vacations";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="calendar" element={<Calendar />} />
+          <Route path="nearest_events" element={<NearestEvents />} />
           <Route path="myprofile" element={<MyProfile />} />
           <Route path="employees" element={<Employees />} />
           <Route path="vacations" element={<Vacations />} />

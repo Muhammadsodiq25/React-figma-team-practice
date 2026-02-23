@@ -1,4 +1,5 @@
-import {dashboard__title,calendarImg,dashboardWorkload,dashboardWorkloadTopTitle,projectsTop,projectsCont} from "../../data/Muhammadsodiq.js"
+import { Link } from "react-router-dom"
+import {dashboard__title,calendarImg,dashboardWorkload,dashboardWorkloadTopTitle,projectsTop,projectsCont,dashboardEvents,events__cont, streamTitle,streamCont} from "../../data/Muhammadsodiq.js"
 import "./Dashboard.css"
 
 const Dashboard = () => {
@@ -73,6 +74,57 @@ const Dashboard = () => {
                     </div>
                   </div>
                 })
+              }
+            </div>
+          </div>
+        </div>
+        <div className="dashboard__bot__right">
+          <div className="dashboard__events">
+            <div className="dashboard__events__top">
+              <h3 className="dashboard__events--title">{dashboardEvents.title}</h3>
+              <Link className="dashboard__events--btn" to='/nearest_events'>{dashboardEvents.btn}</Link>
+            </div>
+            <div className="dashboard__events__cont">
+              {
+                events__cont.map((cart, index) => (
+                  <div className="dashboard__events__cart" key={index}>
+                    <div className="dashboard__events__cart__text">
+                      <h4 className="dashboard__events__cart--title">{cart.title}</h4>
+                      <div className="dashboard__events__cart__text__bot">
+                        <p className="dashboard__events__cart--date">{cart.date}</p>
+                        <p className="dashboard__events__cart--time">{cart.time}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div className="dashboard__events">
+            <h3 className="dashboard__events__cart--title">{streamTitle}</h3>
+            <div className="dashboard__events__cont">
+              {
+                streamCont.map((cart,index) => (
+                  <div className="dashboard__stream__cart" key={index}>
+                    <div className="dashboard__stream__cart__user">
+                      <img src={cart.userImg} alt="" />
+                      <div className="dashboard__stream__cart__user__text">
+                        <h4>{cart.user}</h4>
+                        <p>{cart.job}</p>
+                      </div>
+                    </div>
+                    <div className="dashboard__stream__cart__cont">
+                      {
+                        cart.works.map((cart,index) => (
+                          <div key={index} className="dashboard__stream__cart__works">
+                            <img src={cart.icon} alt="" width={cart.iconWidth}/>
+                            <h4>{cart.text}</h4>
+                          </div>
+                        ))
+                      }
+                    </div>
+                  </div>
+                ))
               }
             </div>
           </div>

@@ -1,12 +1,32 @@
 import "./Sidebar.css"
-import {logo, link, support, logout} from "../../data/Muhammadsodiq.js"
+import {logo, link, support, logout,support_img} from "../../data/Muhammadsodiq.js"
 import { Link, } from "react-router-dom"
 import { useState } from "react"
 
 const Sidebar = () => {
     const [hide,setHide] = useState(false)
+    const [open, setOpen] = useState(false)
   return (
-    <div style={{width:`${hide ? '5%' : '10%'}`}}>
+    <div style={{width:`${hide ? '5%' : '10%'}`, height:'100%'}}>
+        <div style={{position:'fixed', top:'10%', width:'100%', alignItems:'center', display:`${open ? 'flex' : 'none'}`, justifyContent:'center', zIndex:'1000', background:'', height:'100%', margin:'0 auto'}}>
+        <div className="support">
+            <div className="support__close">
+                <button onClick={()=> setOpen(false)}>✕</button>
+            </div>
+            <div className="support__text">
+                <h3 className="support--title">Need some Help?</h3>
+                <img width={'100%'} src={support_img} alt="" />
+                <p className="support__des">Describe your question and our specialists will answer you <br />within 24 hours.</p>
+                <form>
+                    <label htmlFor="requestSubject">Request Subject</label>
+                    <input type="text" placeholder="Technical difficulites" required/>
+                    <label htmlFor="description">Description</label>
+                    <textarea name="description" id="description" placeholder="Add some description of the request" required></textarea>
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+        </div>
             <div className="sidebar" style={{alignItems:`${hide ? 'center' : ''}`, padding:`${hide ? '10px' : ''}`}}>
         <button className="sidebar--logo" onClick={()=> {setHide(!hide)}}>
             <img width={50} height={50} src={logo} alt="" />
@@ -28,9 +48,9 @@ const Sidebar = () => {
       </nav>
               <div className="sidebar__support">
             <img style={{width:"150px", display:`${hide ? 'none' : ''}`}} src={support.img} alt="" />
-            <button>
+            <button className="sidebar__support--btn" onClick={()=> setOpen(!open)}>
                 <img src={support.btnImg} alt="" />
-                <span style={{display:`${hide ? 'none' : ''}`}}>{support.btn}</span>
+                <span onClick={()=> setOpen(!open)} style={{display:`${hide ? 'none' : ''}`, cursor:'pointer'}}>{support.btn}</span>
                 </button>
         </div>
         <button className="sidebar--logout">

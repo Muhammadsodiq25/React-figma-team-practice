@@ -1,12 +1,14 @@
 import React from 'react'
-import Sidebar from '../../components/sidebar/Sidebar'
 import Dashboard from '../dashboard/Dashboard'
+import { Route, Routes } from 'react-router-dom'
+import NearestEvents from '../nearestEvents/NearestEvents'
 
 const Home = () => {
   return (
-    <div>
-      <Dashboard/>
-    </div>
+    <Routes>
+      <Route path='/' element={<Dashboard/>}/>
+      <Route path='/nearest_events' element={<NearestEvents/>}/>
+    </Routes>
   )
 }
 
