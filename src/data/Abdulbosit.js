@@ -1,4 +1,11 @@
 import ProfileImg from "../assets/myProfile-profile-img.png";
+import TeamImg1 from "../assets/team-img1.png";
+import TeamImg2 from "../assets/team-img2.png";
+import TeamImg3 from "../assets/team-img3.png";
+import TeamImg4 from "../assets/team-img4.png";
+import TeamImg5 from "../assets/team-img5.png";
+import TeamImg6 from "../assets/team-img6.png";
+import TeamImg7 from "../assets/team-img7.png";
 
 const Abdulbosit = {
   name: "Evan Yates",
@@ -51,6 +58,58 @@ const Abdulbosit = {
         activeTasks: 20,
       },
       assignees: 2,
+    },
+  ],
+
+  team: [
+    {
+      id: 1,
+      name: "Shawn Stone",
+      role: "UI/UX Designer",
+      level: "Middle",
+      avatar: TeamImg1,
+    },
+    {
+      id: 2,
+      name: "Randy Delgado",
+      role: "UI/UX Designer",
+      level: "Junior",
+      avatar: TeamImg2,
+    },
+    {
+      id: 3,
+      name: "Emily Tyler",
+      role: "Copywriter",
+      level: "Middle",
+      avatar: TeamImg3,
+    },
+    {
+      id: 4,
+      name: "Blake Silva",
+      role: "IOS Developer",
+      level: "Senior",
+      avatar: TeamImg4,
+    },
+    {
+      id: 5,
+      name: "Oscar Holloway",
+      role: "UI/UX Designer",
+      level: "Middle",
+      avatar: TeamImg5,
+    },
+    {
+      id: 6,
+      name: "Wayne Marsh",
+      role: "Copywriter",
+      level: "Junior",
+      avatar: TeamImg6,
+    },
+    {
+      id: 7,
+      name: "Jeremy Barrett",
+      role: "UI/UX Designer ",
+      level: "Middle",
+      avatar: TeamImg7,
     },
   ],
 };

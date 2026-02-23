@@ -92,7 +92,20 @@ function MyProfile() {
               </div>
             ))}
 
-          {activeTab === "Team" && <div className="empty">Team Page</div>}
+          {activeTab === "Team" && (
+            <div className="team-grid">
+              {data.team.map((member) => (
+                <div key={member.id} className="team-card">
+                  <img src={member.avatar} alt="" />
+                  <h3>{member.name}</h3>
+                  <p>{member.role}</p>
+                  <span className={`level ${member.level.toLowerCase()}`}>
+                    {member.level}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
           {activeTab === "Vacations" && (
             <div className="empty">Vacations Page</div>
           )}
