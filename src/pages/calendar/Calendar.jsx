@@ -1,11 +1,24 @@
-import React from 'react'
-
-const Calendar = () => {
+import React from "react";
+import "./Calendar.css";
+import calendar from '../../assets/calendar.png';
+const CalendarHeader = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="calendar">
+      <div className="calendar-top">
+        <h2>Calendar</h2>
+        <button className="add-btn">+ Add Event</button>
+      </div>
 
-export default Calendar
+      <div className="calendar-nav">
+        <span className="arrow">←</span>
+        <span className="date">September, 2020</span>
+        <span className="arrow">→</span>
+      </div>
+      <div className="calendar-img">
+        <img src={calendar} alt="Calendar" />
+      </div>
+    </div>
+  );
+};
+
+export default CalendarHeader;
