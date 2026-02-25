@@ -1,0 +1,275 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+.search__bar {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.search__icon {
+  color: #adb5bd;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.search__input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  color: #1a1d23;
+}
+
+.search__input::placeholder {
+  color: #adb5bd;
+}
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notification__badge {
+  background: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #1a1d23;
+  font-size: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.user__profile {
+  background: white;
+  padding: 5px 15px 5px 5px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.user__avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.user__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1d23;
+}
+
+.arrow__icon {
+  font-size: 12px;
+  color: #1a1d23;
+}
+.employees__container {
+  padding: 20px;
+  background-color: #f8faff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1d23;
+}
+
+.count {
+  color: #9499a1;
+}
+.tab__container {
+  width: 310px;
+  height: 48px;
+  margin-left: 670px;
+  background-color: #e9effd;
+  padding: 4px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tab__btn {
+  width: 151px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7d8592;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.tab__btn.active {
+  background-color: #4c84ff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(76, 132, 255, 0.2);
+}
+
+.tab__btn:hover:not(.active) {
+  color: #4c84ff;
+}
+
+.add__employee--button {
+  margin-left: 1221px !important;
+  background-color: #4c84ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: opacity 0.2s;
+}
+
+.add__employee--button:hover {
+  opacity: 0.9;
+}
+.employee__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee__card {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.gender__info,
+.date__info,
+.age__info,
+.position__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gender__info::before,
+.date__info::before,
+.age__info::before,
+.position__info::before {
+  font-size: 13px;
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.employee__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 250px;
+}
+
+.employee__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.employee__name {
+  margin: 0;
+  font-size: 16px;
+  color: #1a1d23;
+  font-weight: 600;
+}
+
+.employee__email {
+  margin: 0;
+  font-size: 13px;
+  color: #9499a1;
+}
+
+.gender,
+.date,
+.age,
+.position {
+  font-size: 15px;
+  color: #1a1d23;
+  font-weight: 500;
+}
+
+.position__info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn__state {
+  margin-top: -25px;
+  width: 46px;
+  height: 18px;
+  font-size: 11px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  color: #6b7280;
+  margin-left: 150px;
+}
+
+.pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 12px;
+}
+
+.pagination__info {
+  color: #7d8592;
+  font-size: 14px;
+}
+
+.pagination__buttons button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #4c84ff;
+  font-weight: 600;
+  width: 16px;
+  height: 12px;
+}
