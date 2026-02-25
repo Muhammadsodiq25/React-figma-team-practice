@@ -171,7 +171,7 @@ function MyProfile() {
                 </div>
 
                 <div className="days-hours">
-                  <button style={{ background: "#4f7cff", color: "white" }}>
+                  <button>
                     Days
                   </button>
                   <button>Hours</button>
