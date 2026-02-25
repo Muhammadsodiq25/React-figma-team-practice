@@ -4,13 +4,16 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 .container {
   padding: 10px 50px;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
   display: flex;
   background-color: #f4f9fd;
   height: 100%;
