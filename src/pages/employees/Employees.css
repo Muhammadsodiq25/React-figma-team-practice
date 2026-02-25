@@ -142,7 +142,6 @@
 }
 
 .add__employee--button {
-  margin-left: 1221px !important;
   background-color: #4c84ff;
   color: white;
   border: none;
@@ -150,8 +149,8 @@
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
-  margin-left: 10px;
   transition: opacity 0.2s;
+  margin-bottom: 20px;
 }
 
 .add__employee--button:hover {
