@@ -94,15 +94,15 @@
   padding: 4px;
   border-radius: 30px;
   display: flex;
-  width: 500px;
-  height: 50px;
+  width: 400px;
+  height: 40px;
   gap: 10px;
 }
 
 .tabs button {
   background: transparent;
   border: none;
-  padding: 10px 48px;
+  padding: 8px 30px;
   border-radius: 20px;
   cursor: pointer;
   font-size: 15px;
@@ -117,7 +117,7 @@
 .current-btn {
   background: #ffffff;
   border: none;
-  padding: 16px 50px;
+  padding: 14px 40px;
   border-radius: 15px;
   cursor: pointer;
   transition: 0.5s;
@@ -231,7 +231,7 @@
   padding: 20px 30px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 6px 20px 0px #C4CBD61A;
+  box-shadow: 0px 6px 20px 0px #c4cbd61a;
 }
 
 .team-card img {
@@ -243,14 +243,25 @@
 
 .team-card h3 {
   font-size: 16px;
-  color: #0A1629;
+  color: #0a1629;
   margin-bottom: 6px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .team-card p {
   font-size: 14px;
-  color: #0A1629;
+  color: #0a1629;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -260,7 +271,270 @@
   border-radius: 6px;
   cursor: pointer;
   font-size: 13px;
-  border: 1px solid #7D8592;
+  border: 1px solid #7d8592;
   background: transparent;
-  color: #7D8592;
+  color: #7d8592;
+}
+
+.vacation-page {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.vacation-top {
+  display: flex;
+  gap: 25px;
+}
+
+.vacation-top-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+  width: 250px;
+  box-shadow: 0px 6px 20px 0px #3e3e3e00;
+}
+
+.vacation-top-card img {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.vacation-top-card h4 {
+  font-size: 18px;
+  color: #0a1629;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.vacation-top-card p {
+  font-size: 14px;
+  color: #91929e;
+  font-weight: 400;
+}
+
+.vacation-title {
+  font-size: 20px;
+  color: #0a1629;
+  font-weight: 600;
+}
+
+.vacation-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.vacation-card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vacation-card-title span {
+  font-size: 14px;
+  color: #91929e;
+  font-weight: 400;
+}
+
+.vacation-card-title h3 {
+  font-size: 17px;
+  margin-top: 4px;
+  color: #0a1629;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.vacation-info {
+  display: flex;
+  gap: 60px;
+}
+
+.vacation-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vacation-info-item span {
+  font-size: 14px;
+  color: #91929e;
+}
+
+.vacation-info-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a1629;
+}
+
+.vacation-btn {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.vacation-btn.pending {
+  background: #fdc748;
+  color: #ffffff;
+}
+
+.vacation-btn.approved {
+  background: #00d097;
+  color: #ffffff;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 60, 81, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-card {
+  width: 600px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header button {
+  background: #f4f9fd;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.modal-header h3 {
+  color: #0a1629;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.modal-type {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #7d8592;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.type-buttons button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #d8e0f0;
+  background: #ffff;
+  cursor: pointer;
+}
+
+.days-hours {
+  display: flex;
+  background: #e6edf5;
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.days-hours button {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.calendar {
+  border: 1px solid #d8e0f0;
+  border-radius: 8px;
+  padding: 30px 35px;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0a1629;
+}
+
+.calendar-days,
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-days span {
+  width: 52px;
+  height: 28px;
+  background-color: #f4f9fd;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7d8592;
+  margin-bottom: 30px;
+}
+
+.calendar-dates p {
+  height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.date-active {
+  background: #4f7cff;
+  color: white;
+}
+
+.modal-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.send-btn {
+  background: #4f7cff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
