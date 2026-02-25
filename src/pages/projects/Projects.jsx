@@ -8,17 +8,19 @@ const Projects = () => {
   return (
     <div className='ConTainer'>
       <h3>
-        <p><Link>Info</Link></p>
-        <p><Link>About</Link></p>
+        <p><Link to={'/projects'}>Project</Link></p>
+        <p><Link to={'/about'}>About</Link></p>
         <p><Link>Use</Link></p>
       </h3>
         <div className="Container">
       <div className="LeftDiv">
         <h3>Current Projects</h3>
                 <main className="TextMain">
-                    <p>PN0001245</p>
-                    <h3>Medical App (iOS native)</h3>
-                    <p>View details</p>
+                    <main className='MainMiniText'>
+                        <p>PN0001245</p>
+                        <h3>Medical App (iOS native)</h3>
+                        <p>View details</p>
+                    </main>
                 </main>
                 <main className="TextMain">
                     <p>PN0001245</p>
