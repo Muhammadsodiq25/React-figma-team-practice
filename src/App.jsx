@@ -7,6 +7,7 @@ import NearestEvents from "./pages/nearestEvents/NearestEvents";
 import Employees from "./pages/employees/Employees";
 import Vacations from "./pages/vacations/Vacations";
 import Sidebar from "./components/sidebar/Sidebar";
+import About from "./pages/projects/about/About";
 import Support from "./pages/support/Support";
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<About />}/>
+          <Route path="projects" element={<Projects/>} />
           <Route path="calendar" element={<Calendar />} />
           <Route path="nearest_events" element={<NearestEvents />} />
           <Route path="/support" element={<Support/>} />
