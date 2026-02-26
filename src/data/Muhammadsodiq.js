@@ -9,7 +9,9 @@ import sidebarLinkImg7 from "../assets/sidebar-link-img7.png"
 import supportLogo from "../assets/sidebar-support-img.png"
 import supportBtnLogo from "../assets/sidebar-support-btn-img.png"
 import logoutImg from "../assets/sidebar-logout-img.png"
+import supportImg from "../assets/support-img.png"
 export const logo = sidebarLogo
+export const support_img = supportImg
 
 export const link = [
     {
@@ -72,6 +74,9 @@ import projectCartImg from "../assets/dashboard-projects-cart-img.png"
 import projectCartImg2 from "../assets/dashboard-projects-cart-img2.png"
 import projectCartImg3 from "../assets/dashboard-projects-cart-img3.png"
 import projectsCartAssigneesImg from "../assets/dashboard-projects-cart-assignees-img.png"
+import dashboardStreamUserimg1 from "../assets/dashboard-workload-cart-img8.png"
+import streamUserIcon1 from "../assets/dashboard-stream-icon1.png"
+import streamUserIcon2 from "../assets/dashboard-stream-icon2.png"
 
 export const dashboard__title = 'Dashboard'
 export const calendarImg = dashboardCalendarImg
@@ -161,5 +166,127 @@ export const projectsCont = [
         tasks: '23',
         activeTasks: '20',
         assignees: projectsCartAssigneesImg,
+    },
+]
+
+export const dashboardEvents = {
+    title: 'Nearest Events',
+    btn: 'View all >',
+}
+
+export const events__cont = [
+    {
+        title: 'Presentation of the new department',
+        date: 'Today | 5:00 PM',
+        time: '4h',
+        lineCol: '#3F8CFF'
+    },
+    {
+        title: 'Anna’s Birthday',
+        date: 'Today | 6:00 PM',
+        time: '4h',
+        lineCol: '#DE92EB'
+    },
+    {
+        title: 'Ray’s Birthday',
+        date: 'Tomorrow | 2:00 PM',
+        time: '4h',
+        lineCol: '#DE92EB'
+    },
+]
+
+export const streamTitle = 'Activity Stream'
+
+export const streamCont = [
+    {
+        user: 'Oscar Holloway',
+        job: 'UI/UX Designer',
+        userImg: dashboardStreamUserimg1,
+        works: [
+            {
+                icon: streamUserIcon1,
+                text: ' Updated the status of Mind Map task to In Progress',
+                iconWidth: 40
+            },
+            {
+                icon: streamUserIcon2,
+                text: ' Attached files to the task',
+            },
+        ]
+    },
+    {
+        user: 'Oscar Holloway',
+        job: 'UI/UX Designer',
+        userImg: dashboardWorkLoadCartImg3,
+        works: [
+            {
+                icon: streamUserIcon1,
+                text: ' Updated the status of Mind Map task to In Progress',
+                iconWidth: 40
+            },
+        ]
+    },
+]
+
+// Nearest Events
+import nearestCartIcon1 from "../assets/nearest-events-cart-icon1.png"
+
+export const backto_btn = {
+    text: '← Back to Dashboard'
+}
+
+export const nearestTop = {
+    title: 'Nearest Events',
+    btn: '+ Add Event'
+}
+
+export const nearestCont = [
+    {
+        icon: nearestCartIcon1,
+        title: 'Presentation of the new department',
+        date: 'Today | 6:00 PM',
+        time: '4h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Anna’s Birthday',
+        date: 'Today | 5:00 PM',
+        time: '2h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Meeting with Development Team',
+        date: 'Tomorrow | 5:00 PM',
+        time: '4h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Ray’s Birthday',
+        date: 'Tomorrow | 2:00 PM',
+        time: '1h 30m'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Meeting with CEO',
+        date: 'Sep 14 | 5:00 PM',
+        time: '1h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Movie night (Tenet)',
+        date: 'Sep 15 | 5:00 PM',
+        time: '3h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Lucas’s Birthday',
+        date: 'Sep 29 | 5:30 PM',
+        time: '2h'
+    },
+    {
+        icon: nearestCartIcon1,
+        title: 'Meeting with CTO',
+        date: 'Sep 30 | 12:00',
+        time: '1h'
     },
 ]

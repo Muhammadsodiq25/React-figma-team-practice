@@ -1,0 +1,190 @@
+.vacations_page {
+  padding: 30px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.vacation_card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 25px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.vacation_user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 260px;
+}
+
+.vacation_user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.vacation_user h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.vacation_user p {
+  margin: 0;
+  font-size: 13px;
+  color: #8a8a8a;
+}
+
+.vacation_stats {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.vacation_stats div {
+  text-align: center;
+}
+
+.vacation_stats span {
+  font-size: 12px;
+  color: #9aa0aa;
+}
+
+.vacation_stats b {
+  display: block;
+  font-size: 16px;
+}
+
+.vacation-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 18px;
+}
+
+.vacation-navbar__title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.vacation-tabs {
+  display: flex;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 50px;
+}
+
+.vacation-tabs__btn {
+  border: none;
+  background: transparent;
+  padding: 10px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.vacation-tabs__btn--active {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.vacation-action-btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.calendar_wrapper {
+  background: #fff;
+  margin-top: 30px;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.calendar_header {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.calendar_body {
+  display: flex;
+  gap: 20px;
+}
+
+.employees_panel {
+  width: 260px;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.employees_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.employees_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.employee_item img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.calendar_grid {
+  flex: 1;
+}
+
+.calendar_days {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.calendar_days span {
+  text-align: center;
+}
+
+.calendar_cells {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.calendar_cell {
+  height: 22px;
+  border-radius: 6px;
+  background: #f1f5f9;
+}
+
+.cell_blue {
+  background: #38bdf8;
+}
+
+.cell_purple {
+  background: #a78bfa;
+}

@@ -5,6 +5,7 @@ import "./MyProfile.css";
 function MyProfile() {
   const data = Abdulbosit;
   const [activeTab, setActiveTab] = useState("Projects");
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="myprofile">
@@ -51,7 +52,9 @@ function MyProfile() {
               </button>
             </div>
 
-            <button className="current-btn">Current Projects</button>
+            <button className="current-btn" onClick={() => setShowModal(true)}>
+              Current Projects
+            </button>
           </div>
 
           {activeTab === "Projects" &&
@@ -92,9 +95,111 @@ function MyProfile() {
               </div>
             ))}
 
-          {activeTab === "Team" && <div className="empty">Team Page</div>}
+          {activeTab === "Team" && (
+            <div className="team-grid">
+              {data.team.map((member) => (
+                <div key={member.id} className="team-card">
+                  <img src={member.avatar} alt="" />
+                  <h3>{member.name}</h3>
+                  <p>{member.role}</p>
+                  <span className={`level ${member.level.toLowerCase()}`}>
+                    {member.level}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+
           {activeTab === "Vacations" && (
-            <div className="empty">Vacations Page</div>
+            <div className="vacation-page">
+              <div className="vacation-top">
+                {data.vacation.vacationTop.map((item, index) => (
+                  <div key={index} className="vacation-top-card">
+                    <img src={item.img} alt="" />
+                    <div>
+                      <h4>{item.name}</h4>
+                      <p>{item.day}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <h3 className="vacation-title">{data.vacation.vacationName}</h3>
+
+              <div className="vacation-cards">
+                {data.vacation.vacationCards.map((card) => (
+                  <div key={card.id} className="vacation-card">
+                    <div className="vacation-card-title">
+                      <span>{card.subTitle}</span>
+                      <h3>{card.title}</h3>
+                    </div>
+
+                    <div className="vacation-info">
+                      {card.cardsLeft.map((item, i) => (
+                        <div key={i} className="vacation-info-item">
+                          <span>{item.type}</span>
+                          <p>{item.date}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                    <button
+                      className={`vacation-btn ${card.btn.toLowerCase()}`}
+                    >
+                      {card.btn}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {showModal && (
+            <div className="modal-overlay" onClick={() => setShowModal(false)}>
+              <div className="modal-card" onClick={(e) => e.stopPropagation()}>
+                <div className="modal-header">
+                  <h3>{data.requestModal.title}</h3>
+                  <button onClick={() => setShowModal(false)}>X</button>
+                </div>
+
+                <p className="modal-type">Request Type</p>
+
+                <div className="type-buttons">
+                  {data.requestModal.types.map((type, i) => (
+                    <button key={i}>{type}</button>
+                  ))}
+                </div>
+
+                <div className="days-hours">
+                  <button>
+                    Days
+                  </button>
+                  <button>Hours</button>
+                </div>
+
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <span>{data.requestModal.month}</span>
+                  </div>
+
+                  <div className="calendar-days">
+                    {data.requestModal.days.map((d, i) => (
+                      <span key={i}>{d}</span>
+                    ))}
+                  </div>
+
+                  <div className="calendar-dates">
+                    {data.requestModal.dates.map((date, i) => (
+                      <p key={i}>{date}</p>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="modal-footer">
+                  <button className="send-btn">Send Request</button>
+                </div>
+              </div>
+            </div>
           )}
         </div>
       </div>

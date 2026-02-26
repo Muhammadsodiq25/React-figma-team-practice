@@ -6,7 +6,7 @@ import { useState } from "react"
 const Sidebar = () => {
     const [hide,setHide] = useState(false)
   return (
-    <div style={{width:`${hide ? '5%' : '10%'}`}}>
+    <div style={{width:`${hide ? '5%' : '10%'}`, height:'100%'}}>
             <div className="sidebar" style={{alignItems:`${hide ? 'center' : ''}`, padding:`${hide ? '10px' : ''}`}}>
         <button className="sidebar--logo" onClick={()=> {setHide(!hide)}}>
             <img width={50} height={50} src={logo} alt="" />
@@ -28,10 +28,10 @@ const Sidebar = () => {
       </nav>
               <div className="sidebar__support">
             <img style={{width:"150px", display:`${hide ? 'none' : ''}`}} src={support.img} alt="" />
-            <button>
+            <Link to='/support' className="sidebar__support--btn">
                 <img src={support.btnImg} alt="" />
-                <span style={{display:`${hide ? 'none' : ''}`}}>{support.btn}</span>
-                </button>
+                <span style={{display:`${hide ? 'none' : ''}`, cursor:'pointer'}}>{support.btn}</span>
+                </Link>
         </div>
         <button className="sidebar--logout">
             <img src={logout.img} alt="" />
