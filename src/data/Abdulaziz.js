@@ -7,6 +7,14 @@ import Employees6 from "../assets/Employees--6.png";
 import Employees7 from "../assets/Employees--7.png";
 import Employees8 from "../assets/Employees--8.png";
 import Employees9 from "../assets/Employees--9.png";
+import Employees10 from "../assets/dashboard-workload-cart-img1.png";
+import Employees11 from "../assets/dashboard-workload-cart-img2.png";
+import Employees12 from "../assets/dashboard-workload-cart-img3.png";
+import Employees13 from "../assets/dashboard-workload-cart-img4.png";
+import Employees14 from "../assets/Employees--2.png";
+import Employees15 from "../assets/Employees--15.png";
+import Employees16 from "../assets/dashboard-workload-cart-img6.png";
+import Employees17 from "../assets/Employees--17.png";
 
 const Abdulaziz = [
   {
@@ -23,7 +31,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "UI/UX Designer",
     btnState: "Middle",
-    img1: Employees9,
+    img2: Employees9,
   },
   {
     id: 2,
@@ -39,7 +47,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "UI/UX Designer",
     btnState: "Junior",
-    img1: Employees9,
+    img2: Employees9,
 },
   {
     id: 3,
@@ -55,7 +63,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "Copywriter",
     btnState: "Senior",
-    img1: Employees9,
+    img2: Employees9,
   },
   {
     id: 4,
@@ -71,7 +79,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "iOS Developer",
     btnState: "Middle",
-    img1: Employees9,
+    img2: Employees9,
   },
   {
     id: 5,
@@ -87,7 +95,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "UI/UX Designer",
     btnState: "Junior",
-    img1: Employees9,
+    img2: Employees9,
 },
   {
     id: 6,
@@ -103,7 +111,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "Sales Manager",
     btnState: "Junior",
-    img1: Employees9,
+    img2: Employees9,
   },
   {
     id: 7,
@@ -119,7 +127,7 @@ const Abdulaziz = [
     position: "Position",
     Position: "Copywriter",
     btnState: "Middle",
-    img1: Employees9,
+    img2: Employees9,
   },
   {
     id: 8,
@@ -135,7 +143,111 @@ const Abdulaziz = [
     position: "Position",
     Position: "iOS Developer",
     btnState: "Senior",
-    img1: Employees9,
+    img2: Employees9,
+  },
+  {
+    id1: "Activity1",
+    img1: Employees10,
+    name: "Shawn Stone",
+    Position: "UI/UX Designer",
+    btnState: "Middle",
+    task: "0",
+    Task: "Backlog tasks",
+    progress: "16",
+    Progress: "Tasks In Progress",
+    revies: "6",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity2",
+    img1: Employees11,
+    name: "Randy Delgado",
+    Position: "UI/UX Designer",
+    btnState: "Junior",
+    task: "1",
+    Task: "Backlog tasks",
+    progress: "20",
+    Progress: "Tasks In Progress",
+    revies: "2",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity3",
+    img1: Employees12,
+    name: "Emily Tyler",
+    Position: "Copywriter",
+    btnState: "Middle",
+    task: "0",
+    Task: "Backlog tasks",
+    progress: "20",
+    Progress: "Tasks In Progress",
+    revies: "2",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity4",
+    img1: Employees13,
+    name: "Louis Castro",
+    Position: "Copywriter",
+    btnState: "Senior",
+    task: "1",
+    Task: "Backlog tasks",
+    progress: "20",
+    Progress: "Tasks In Progress",
+    revies: "2",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity5",
+    img1: Employees14,
+    name: "Millie Harvey",
+    Position: "Android Developer",
+    btnState: "Junior",
+    task: "1",
+    Task: "Backlog tasks",
+    progress: "14",
+    Progress: "Tasks In Progress",
+    revies: "3",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity6",
+    img1: Employees15,
+    name: "Ethel Weber",
+    Position: "Copywriter",
+    btnState: "Junior",
+    task: "0",
+    Task: "Backlog tasks",
+    progress: "8",
+    Progress: "Tasks In Progress",
+    revies: "6",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity7",
+    img1: Employees16,
+    name: "Charlie Palmer",
+    Position: "Copywriter",
+    btnState: "Senior",
+    task: "1",
+    Task: "Backlog tasks",
+    progress: "20",
+    Progress: "Tasks In Progress",
+    revies: "2",
+    Review: "Tasks In Review",
+  },
+  {
+    id1: "Activity8",
+    img1: Employees17,
+    name: "Pearl Sims",
+    Position: "Project Manager",
+    btnState: "Middle",
+    task: "0",
+    Task: "Backlog tasks",
+    progress: "4",
+    Progress: "Tasks In Progress",
+    revies: "6",
+    Review: "Tasks In Review",
   },
 ];
 
